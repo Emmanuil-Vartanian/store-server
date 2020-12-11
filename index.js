@@ -36,7 +36,7 @@ app.post("/user", (req, res) => {
       Цена игрушек: ${req.body.dataToys.map((obj) => obj.price)}
       Цвет игрушек: ${req.body.dataToys.map((obj) =>
         obj.colorsToy === "" ? "натуральный цвет" : obj.colorsToy
-      )}`,
+      )}`
   };
   mailer(message);
   res.status(201).send(req.body);
