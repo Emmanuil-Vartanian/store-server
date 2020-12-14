@@ -16,6 +16,6 @@ const mailer = (message) => {
     if (err) return console.log(err);
     console.log("Info", info);
   });
-}
+};
 
 module.exports = mailer;
