@@ -9,7 +9,7 @@ const app = express();
 // const { root } = require("./graphQL/resolvers/resolvers");
 
 app.use(bodyParser.json());
-// app.use(express.static("build"));
+app.use(express.static("build"));
 app.use(cors());
 
 var users = [];
