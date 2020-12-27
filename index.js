@@ -14,11 +14,11 @@ app.use(cors());
 
 var users = [];
 
-app.get("https://127.0.0.1:5556/user", (req, res) => {
+app.get("/user", (req, res) => {
   res.send(JSON.stringify(users));
 });
 
-app.post("https://127.0.0.1:5556/user", (req, res) => {
+app.post("/user", (req, res) => {
   users.push(req.body);
 
   let reqBody = req.body;
